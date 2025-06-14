@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  justify-content: center; /* Center all items horizontally */
+  align-items: center; /* Center all items vertically */
+  padding: 10px 20px; /* Add padding for spacing */
+  background-color: #fff /* Match the background color from the image */
+
+}
+
+.headers-links {
+  display: flex;
+  align-items: center; /* Vertically align all items in the list */
+  gap: 30px; /* Set spacing between items to 30px */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Vertically align logo and text */
+  gap: 8px; /* Space between logo image and text */
+}
+
+.logo {
+  width: 100%; /* Adjust based on your logo size */
+  height: 40px;
+  margin-top: 8px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.header-login,
+.header-register {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px; /* Space for DownOutlined icon */
+  transition: color 0.3s;
+
+  &:hover {
+    color: #1890ff; /* Ant Design primary color */
+  }
+}
+
+.nav-search {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 250px; /* Adjust width to match the image */
+}
+
+.header-like,
+.header-cart {
+  width: 24px;
+  height: 24px;
+}
+
+/* Customize Ant Design dropdown */
+.ant-dropdown {
+  .ant-dropdown-menu {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+
+    .ant-dropdown-menu-item {
+      padding: 8px 16px;
+      font-size: 14px;
+
+      &:hover {
+        background-color: #e6f7ff;
+      }
+    }
+  }
+}
+
+/* Ensure consistent alignment for all li elements */
+.headers-links li {
+  display: flex;
+  align-items: center;
+}

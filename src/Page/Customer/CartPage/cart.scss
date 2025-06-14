@@ -1,0 +1,44 @@
+.cart-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+  .cart-container {
+    max-width: 1400px;
+    width: 100%;
+    .cart-content {
+      .cart-summary {
+        border: 1px solid #eee;
+        width: 400px; /* hoặc 100% tùy layout */
+        padding: 16px;
+        font-family: "Arial", sans-serif;
+      }
+
+      .total-row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 8px;
+        color: #2e3a59;
+      }
+
+      .checkout-button {
+        width: 100%;
+        background-color: #e51414;
+        color: white;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 12px 0;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .checkout-button:hover {
+        background-color: #cc1010;
+      }
+    }
+  }
+}
